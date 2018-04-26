@@ -75,7 +75,7 @@
             {% endif %}
 
             {% if theme.post_meta.created_at and theme.post_meta.updated_at %}
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">•</span>
             {% endif %}
 
             {% if theme.post_meta.updated_at %}
@@ -94,7 +94,7 @@
           {% if post.categories and post.categories.length and theme.post_meta.categories %}
             <span class="post-category" >
             {% if theme.post_meta.created_at or theme.post_meta.updated_at %}
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">•</span>
             {% endif %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -120,9 +120,9 @@
           {% if post.comments %}
             {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-comments-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count ds-thread-count" data-thread-key="{{ post.path }}" itemprop="commentCount"></span>
@@ -130,7 +130,7 @@
               </span>
             {% elseif theme.facebook_comments_plugin.enable %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -140,9 +140,10 @@
               </span>
             {% elseif theme.disqus.enable and theme.disqus.count %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-comments"></i>
+                  <span class="post-meta-item-text">评论</span>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
@@ -152,7 +153,7 @@
             {% elseif theme.hypercomments_id %}
             <!--noindex-->
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -163,7 +164,7 @@
               <!--/noindex-->
             {% elseif theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">•</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-comment-o"></i>
               </span>
@@ -178,7 +179,7 @@
               {% endif %}
             {% elseif is_post() and theme.gitment.enable and theme.gitment.mint and theme.gitment.count %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -188,7 +189,7 @@
               </span>
             {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -202,7 +203,7 @@
           {# LeanCould PageView #}
           {% if theme.leancloud_visitors.enable %}
              <span id="{{ url_for(post.path) }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
-               <span class="post-meta-divider">|</span>
+               <span class="post-meta-divider">•</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
@@ -214,7 +215,7 @@
           {% endif %}
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
-            <span class="post-meta-divider">|</span>
+            <span class="post-meta-divider">•</span>
             <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
             </span>
@@ -224,7 +225,7 @@
             <div class="post-wordcount">
               {% if theme.post_wordcount.wordcount %}
                 {% if not theme.post_wordcount.separated_meta %}
-                  <span class="post-meta-divider">|</span>
+                  <span class="post-meta-divider">•</span>
                 {% endif %}
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
@@ -238,7 +239,7 @@
               {% endif %}
 
               {% if theme.post_wordcount.wordcount and theme.post_wordcount.min2read %}
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">•</span>
               {% endif %}
 
               {% if theme.post_wordcount.min2read %}
@@ -265,6 +266,7 @@
       </header>
     {% endif %}
 
+
     {#################}
     {### POST BODY ###}
     {#################}
@@ -290,6 +292,13 @@
       {% endif %}
 
       {% if is_index %}
+
+        {% if post.image %}
+          <div class="out-img-topic">
+            <img src={{ post.image }} class="img-topic" />
+          </div>
+        {% endif %}
+
         {% if post.description and theme.excerpt_description %}
           {{ post.description }}
           <!--noindex-->
@@ -334,6 +343,12 @@
     {### END POST BODY ###}
     {#####################}
 
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
+
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
@@ -346,9 +361,15 @@
       </div>
     {% endif %}
 
-    {% if theme.post_copyright.enable and not is_index %}
+   {% if theme.post_copyright.enable and not is_index %}
       <div>
         {% include 'post-copyright.swig' with { post: post } %}
+      </div>
+    {% endif %}
+
+    {% if theme.recommended_posts.enabled and not is_index %}
+      <div>
+        {% include 'recommended_posts.swig' with {post: post, site: site} %}
       </div>
     {% endif %}
 
@@ -356,7 +377,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
@@ -388,7 +409,7 @@
 
         {% if theme.needmoreshare2.enable and theme.needmoreshare2.postbottom.enable %}
           {% if (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) %}
-            <span class="post-meta-divider">|</span>
+            <span class="post-meta-divider">•</span>
           {% endif %}
           <div id="needsharebutton-postbottom">
             <span class="btn">

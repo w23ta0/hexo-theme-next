@@ -30,9 +30,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             {% if theme.avatar %}
+              <a href="/" class="site-author-image" rel="start" style="border:none">
               <img class="site-author-image" itemprop="image"
                 src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
                 alt="{{ theme.author }}" />
+              </a>
             {% endif %}
               <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
               <p class="site-description motion-element" itemprop="description">{#
@@ -124,6 +126,7 @@
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-{{ theme.links_icon | default('globe') | lower }}"></i>
                 {{ theme.links_title }}
+                <i class="fa  fa-fw fa-{{ theme.links_icon | default('globe') | lower }}"></i>
               </div>
               <ul class="links-of-blogroll-list">
                 {% for name, link in theme.links %}
