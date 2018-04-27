@@ -123,7 +123,7 @@ scheme: Muse
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub:   https://github.com/w23ta0 || github
+  GitHub: https://github.com/w23ta0 || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   Twitter: https://twitter.com/w23ta0 || twitter
@@ -134,7 +134,7 @@ social:
   Instagram: https://instagram.com/w23ta0 || instagram
   #Skype: skype:yourname?call|chat || skype
 
-
+# 侧栏社交链接图标设置
 social_icons:
   enable: true
   icons_only: false
@@ -145,33 +145,12 @@ links_icon: globe
 links_title: 神奇的链接
 #links_layout: block
 links_layout: inline
-#links:
-  #Title: http://example.com/
-
 links:
-  cold's world: https://www.linuxzen.com/
-  Mr.心弦: http://www.cnblogs.com/luotianshuai/
-  Blessing: https://prinzeugen.net/
-  扶凯: http://www.php-oa.com/
-  安正超博客: http://overtrue.me/
-  ZWW: http://zww.me/
-  大发: https://fatesinger.com/
-  vpsee: http://www.vpsee.com/
-  JavaChen: http://blog.javachen.com/about.html
-  董的博客: http://dongxicheng.org/
-  Debugo: http://debugo.com/
-  91yun: https://www.91yun.org/
-  秋水逸冰: https://teddysun.com/
-  Mayter's Blog: http://www.mayter.cn/
-  不死鸟: https://lai.yuweining.cn/
-  GFW BLOG: http://www.chinagfw.org/
-  BreakWa11: https://breakwa11.blogspot.com/
-  flyou.ren: http://flyou.ren/
-  老管网络日志: http://guanjianfeng.com
-  易 象 辞: https://reuixiy.github.io/
-  Mashiro_Sorata: http://mashirosorata.vicp.io
-  Braid信息安全博客: http://www.cnbraid.com/
-  Senraの小窝: http://www.senra.me/
+  😆 网易云音乐 😆: https://music.163.com/#/user/home?id=67526402
+  海底电缆地图：连通世界的方式: https://www.submarinecablemap.com/
+  尼古拉·特斯拉：发明了现代世界的人: https://www.bilibili.com/video/av6211226/
+  我的小伙伴们: /friends/
+  😜 关于我 😜: /about/
 
 
 # Sidebar Avatar
@@ -207,9 +186,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
@@ -242,7 +221,7 @@ excerpt_description: false
 # 自定义 [Read More] 按钮之前要显示的内容！
 auto_excerpt:
   enable: true
-  length: 150
+  length: 300
 
 # Post meta display settings
 post_meta:

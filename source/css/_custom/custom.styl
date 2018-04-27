@@ -8,6 +8,10 @@ body {
         text-shadow: 0 0 1px rgba(0,0,0,.2);
 }
 
+.post-type-normal {
+    border-radius: 10px;
+}
+
 table {
     table-layout: auto;
 }
@@ -97,7 +101,7 @@ h4.recommended {
 }
 // 站点名字体
 .site-title {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     line-height: 80px;
@@ -181,22 +185,20 @@ h4.recommended {
 
 // [Read More]按钮样式
 .post-button .btn {
-    color: #555 !important;
-    background-color: rgb(255, 255, 255);
+    color: #666 !important;
+    background: #eee;
     border-radius: 3px;
     font-size: 15px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
     border: none !important;
     transition-property: unset;
     margin-top: 20px;
     padding: 0px 15px;
 }
 .post-button .btn:hover {
-    color: rgb(255, 255, 255) !important;
+    background: #ddd;
+    color: #555 !important;
     border-radius: 3px;
     font-size: 15px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-    background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
 }
 // 去除在页面文章之间的分割线
 .posts-expand .post-eof {
@@ -431,7 +433,7 @@ img:hover {
 // 侧栏友链标题
 .links-of-blogroll-title {
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     color: rgba(7, 179, 155, 0.75);
     margin-left: 6px;
     font-size: 15px;
@@ -484,6 +486,9 @@ img:hover {
     margin: 50px 0px;
 }
 @media (max-width: 1023px) {
+    .post-type-normal {
+        border-radius: initial;
+    }
     .posts-collapse {
         margin: 50px 20px;
     }
@@ -507,7 +512,7 @@ img:hover {
 }
 
 .post-type-archive {
-    border-radius: unset;
+    border-radius: initial;
     margin: 0!important;
     padding: 5px 36px;
     background-color: #fff;
@@ -583,9 +588,6 @@ a.post-title-link-archive {
     }
 }
 
-.post-type-normal {
-    border-radius: 10px;
-}
 
 // 标签云页面
 .tag-cloud {
@@ -910,7 +912,7 @@ code.description {
 // 移动端顶部
 @media (max-width: 767px) {
     .site-title {
-        font-size: 40px !important;
+        font-size: 35px !important;
         letter-spacing: 0px !important;
     }
     .site-subtitle{
