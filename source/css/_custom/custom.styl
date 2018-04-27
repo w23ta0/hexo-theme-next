@@ -181,22 +181,20 @@ h4.recommended {
 
 // [Read More]按钮样式
 .post-button .btn {
-    color: #555 !important;
-    background-color: rgb(255, 255, 255);
+    color: #666 !important;
+    background-color: #f0f0f0;
     border-radius: 3px;
     font-size: 15px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
     border: none !important;
     transition-property: unset;
     margin-top: 20px;
     padding: 0px 15px;
 }
 .post-button .btn:hover {
-    color: rgb(255, 255, 255) !important;
+    color: #555 !important;
+    background: #e8e8e8;
     border-radius: 3px;
     font-size: 15px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-    background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
 }
 // 去除在页面文章之间的分割线
 .posts-expand .post-eof {
@@ -583,9 +581,6 @@ a.post-title-link-archive {
     }
 }
 
-.post-type-normal {
-    border-radius: 10px;
-}
 
 // 标签云页面
 .tag-cloud {
@@ -615,11 +610,7 @@ a.post-title-link-archive {
     padding: 106px 36px 10px 36px;
 }
 
-@media (max-width: 767px) {
-    .post-type-normal {
-        border-radius: initial;
-    }
-}
+
 @media (max-width: 767px) {
     #top {
         border-radius: initial;
