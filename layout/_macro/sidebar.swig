@@ -33,18 +33,19 @@
               <a href="/" class="site-author-image" rel="start" style="border:none">
               <img class="site-author-image" itemprop="image"
                 src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
-                alt="{{ theme.author }}" />
-              </a>
-            {% endif %}
-              <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
-
-              <p id="hitokoto" class="site-description motion-element" itemprop="description">{#
+                alt="{{ theme.author }}"
+                title="{#
             #}{% if theme.seo %}{#
               #}{{ theme.signature }}{#
             #}{% else %}{#
               #}{{ theme.description }}{#
             #}{% endif %}{#
-            #}</p>
+            #}" />
+              </a>
+            {% endif %}
+              <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
+
+              <p id="hitokoto" class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -132,7 +133,7 @@
               <ul class="links-of-blogroll-list">
                 {% for name, link in theme.links %}
                   <li class="links-of-blogroll-item">
-                    <a href="{{ link }}" title="{{ name }}" target="_blank">{{ name }}</a>
+                    <a href="{{ link.split('||')[0] }}" title="{{ link.split('||')[1] |  default(name) }}" target="_blank">{{ name }}</a>
                   </li>
                 {% endfor %}
               </ul>
