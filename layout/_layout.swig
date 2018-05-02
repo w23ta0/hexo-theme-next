@@ -96,4 +96,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script>$("body").backstretch("http://p7m1ep6zo.bkt.clouddn.com/background.png")</script>
 <!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
+<script type="text/javascript" src="http://p7m1ep6zo.bkt.clouddn.com/blog/src/love.js"></script>
