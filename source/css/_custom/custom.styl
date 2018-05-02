@@ -487,20 +487,14 @@ img:hover {
 }
 
 @media (max-width: 1023px) {
-    #top {
-        border-radius: initial;
+    .posts-collapse {
+        margin: 50px 20px;
     }
     .comments {
         border-radius: initial;
     }
-    .tag-cloud {
-        border-radius: initial;
-    }
     .post-type-normal {
         border-radius: initial;
-    }
-    .posts-collapse {
-        margin: 50px 20px;
     }
 }
 // 时间轴左边线条
@@ -598,7 +592,6 @@ a.post-title-link-archive {
     }
 }
 
-
 // 标签云页面
 .tag-cloud {
     border-radius: 10px;
@@ -616,6 +609,11 @@ a.post-title-link-archive {
         padding: 86px 5px 36px 5px;
     }
 }
+@media (max-width: 1023px) {
+    .tag-cloud {
+        border-radius: initial;
+    }
+}
 // 自定义的TopX页面样式
 #top {
     border-radius: 10px;
@@ -626,12 +624,15 @@ a.post-title-link-archive {
     background-color: rgb(255, 255, 255);
     padding: 106px 36px 10px 36px;
 }
-
-
 @media (max-width: 767px) {
     #top {
         border-radius: initial;
         padding: 96px 10px 0px 10px;
+    }
+}
+@media (max-width: 1023px) {
+    #top {
+        border-radius: initial;
     }
 }
 // 自定义ABOUT页面的样式
@@ -883,10 +884,14 @@ code.description {
         margin-top: 10px;
     }
     .comments {
+        border-radius: initial;
         margin: 40px 0px 40px 0px !important;
     }
     .footer {
         box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .post-type-normal {
+        border-radius: initial;
     }
 }
 .sidebar-active #sidebar-dimmer {
