@@ -18,6 +18,7 @@
 {% block content %}
 
   <div id="posts" class="posts-expand">
+  <div class="post">
     {##################}
     {### PAGE BLOCK ###}
     {##################}
@@ -57,6 +58,7 @@
     {######################}
     {### END PAGE BLOCK ###}
     {######################}
+    </div>
   </div>
 
 {% endblock %}

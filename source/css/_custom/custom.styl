@@ -8,12 +8,13 @@ body {
         text-shadow: 0 0 1px rgba(0,0,0,.2);
 }
 
-.post-type-normal {
-    border-radius: 10px;
-}
 
 table {
     table-layout: auto;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 //标题自动编号
@@ -144,6 +145,7 @@ h4.recommended {
 
 // 文章页样式
 .post {
+    border-radius: 10px;
     margin-bottom: 50px;
     padding: 45px 36px 36px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
@@ -493,7 +495,7 @@ img:hover {
     .comments {
         border-radius: initial;
     }
-    .post-type-normal {
+    .post {
         border-radius: initial;
     }
 }
@@ -571,9 +573,7 @@ a.post-title-link-archive {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 // 分类页面
-.post-block.page {
-    margin-top: 40px;
-}
+
 .category-all-page {
     margin: -80px 50px 40px 50px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -592,49 +592,12 @@ a.post-title-link-archive {
     }
 }
 
-// 标签云页面
-.tag-cloud {
-    border-radius: 10px;
-    margin-top: -80px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    background-color: rgb(255, 255, 255);
-    padding: 86px 36px 36px 36px;
-}
-.tag-cloud-title {
-    margin-bottom: 15px;
-}
-@media (max-width: 767px) {
-    .tag-cloud {
-        border-radius: initial;
-        padding: 86px 5px 36px 5px;
-    }
-}
-@media (max-width: 1023px) {
-    .tag-cloud {
-        border-radius: initial;
-    }
-}
+
 // 自定义的TopX页面样式
 #top {
-    border-radius: 10px;
-    display: block;
     text-align: center;
-    margin-top: -100px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    background-color: rgb(255, 255, 255);
-    padding: 106px 36px 10px 36px;
 }
-@media (max-width: 767px) {
-    #top {
-        border-radius: initial;
-        padding: 96px 10px 0px 10px;
-    }
-}
-@media (max-width: 1023px) {
-    #top {
-        border-radius: initial;
-    }
-}
+
 // 自定义ABOUT页面的样式
 .about-page {
     margin: -80px 0px 60px 0px;
@@ -844,7 +807,16 @@ code.description {
     padding: 1px 1px 1px 1px;
     margin: 0px 1px 0px 4px;
 }
+
+.posts-expand {
+    padding-top: 80px;
+}
+
 // 移动端样式
+.main {
+    padding-bottom: 120px;
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
     .main-inner {
         margin: 0 auto;
@@ -867,6 +839,7 @@ code.description {
         font-size: 10px;
     }
     .post {
+        border-radius: initial;
         margin-bottom: 30px;
         padding: 20px 15px 15px;
     }
@@ -889,9 +862,6 @@ code.description {
     }
     .footer {
         box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
-    }
-    .post-type-normal {
-        border-radius: initial;
     }
 }
 .sidebar-active #sidebar-dimmer {
