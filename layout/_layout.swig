@@ -94,6 +94,6 @@
 
 <!-- 页面背景 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-<script>$("body").backstretch("http://p7m1ep6zo.bkt.clouddn.com/background.png")</script>
+<script>$("body").backstretch("http://w23ta0-blog.oss-cn-hongkong.aliyuncs.com/background.png")</script>
 <!-- 页面点击小红心 -->
-<script type="text/javascript" src="http://p7m1ep6zo.bkt.clouddn.com/blog/src/love.js"></script>
+<script type="text/javascript" src="http://w23ta0-blog.oss-cn-hongkong.aliyuncs.com/blog/src/love.js"></script>
