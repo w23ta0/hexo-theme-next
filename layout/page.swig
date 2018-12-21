@@ -39,7 +39,7 @@
             </div>
           </div>
         {% elif page.type === 'categories' %}
-          <div class="post category-all-page">
+          <div class="category-all-page">
             <div class="category-all-title">
                 {{ _p('counter.categories', site.categories.length) }}
             </div>
