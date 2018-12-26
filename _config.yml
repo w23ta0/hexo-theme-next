@@ -150,7 +150,7 @@ links:
   海底电缆地图：连通世界的方式: https://www.submarinecablemap.com/
   尼古拉·特斯拉：发明了现代世界的人: https://www.bilibili.com/video/av6211226/
   我的小伙伴们: /friends/ || 友情链接
-  😜 关于我 😜: /about/ || (*ﾟ∀ﾟ*)
+
 
 
 # Sidebar Avatar
@@ -367,7 +367,7 @@ baidu_analytics: 0ebe624548e74b737e4667f8f8471b05
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: w23ta0
   count: true
 
@@ -385,12 +385,12 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid: iu2W9YOrkxvoXWEGPBFKOP3G-gzGzoHsz # your leancloud application appid
+  appkey: 9WRYEmJ7PeAzvXhXU6BddHR7  # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
