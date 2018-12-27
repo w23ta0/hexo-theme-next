@@ -104,14 +104,14 @@
               {% endif %}
               {% for cat in post.categories %}
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="{{ url_for(cat.path) }}" itemprop="url" rel="index">
+                  <a class="categories" href="{{ url_for(cat.path) }}" itemprop="url" rel="index">
                     <span itemprop="name">{{ cat.name }}</span>
                   </a>
                 </span>
 
                 {% set cat_length = post.categories.length %}
                 {% if cat_length > 1 and loop.index !== cat_length %}
-                  {{ __('symbol.comma') }}
+                  /
                 {% endif %}
               {% endfor %}
             </span>
@@ -194,9 +194,7 @@
                   <i class="fa fa-comments"></i>
                   <span class="post-meta-item-text">评论&#58;</span>
                 </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
-                </a>
               </span>
             {% endif %}
           {% endif %}
