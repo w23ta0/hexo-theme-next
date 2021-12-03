@@ -27,7 +27,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "w23ta0, Security, Python, 博客"
+keywords: "w23ta0, bolg, linux, mysql, python, docker"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -188,8 +188,8 @@ sidebar:
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
   display: post
-  #display: always
-  #display: hide
+  # display: always
+  # display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
@@ -358,7 +358,7 @@ han: false
 
 
 # Swiftype Search API Key
-# swiftype_key:  G955irHkg8F8kUrECt2w
+swiftype_key:  G955irHkg8F8kUrECt2w
 
 # Baidu Analytics ID
 baidu_analytics: 0ebe624548e74b737e4667f8f8471b05
