@@ -358,7 +358,7 @@ han: false
 
 
 # Swiftype Search API Key
-swiftype_key:  G955irHkg8F8kUrECt2w
+# swiftype_key:
 
 # Baidu Analytics ID
 baidu_analytics: 0ebe624548e74b737e4667f8f8471b05
@@ -614,7 +614,7 @@ calendar:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------
