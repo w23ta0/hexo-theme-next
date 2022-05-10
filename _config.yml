@@ -539,7 +539,7 @@ valine:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: zsD5a2JtAD95dPxa8BpK56XA-MdYXbMMI
   app_key: 7kgfognspTtLa2IuJih1EH8y
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
