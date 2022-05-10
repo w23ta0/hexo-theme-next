@@ -535,6 +535,7 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
+  serverURLs: zsd5a2jt.api.lncldglobal.com
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.

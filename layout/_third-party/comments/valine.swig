@@ -18,6 +18,7 @@
         avatar:'{{ theme.valine.avatar }}',
         guest_info:guest,
         pageSize:'{{ theme.valine.pageSize }}' || 10,
+		serverURLs: '<%= theme.valine.serverURLs %>' 
     });
   </script>
 {% endif %}
