@@ -1,5 +1,4 @@
 {% if theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
@@ -18,7 +17,7 @@
         avatar:'{{ theme.valine.avatar }}',
         guest_info:guest,
         pageSize:'{{ theme.valine.pageSize }}' || 10,
-		serverURLs: '<%= theme.valine.serverURLs %>' 
+		serverURLs: '{{ theme.valine.serverURLs }}' 
     });
   </script>
 {% endif %}
