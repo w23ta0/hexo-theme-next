@@ -1,6 +1,6 @@
 {% if theme.valine.enable and theme.valine.appid and theme.valine.appkey and page.title !=== 'TopX' %}
   <script src="//unpkg.com/leancloud-storage@4.12.2/dist/av-live-query-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
 
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
