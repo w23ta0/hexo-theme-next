@@ -1,12 +1,7 @@
 {% if theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
   <script src="//unpkg.com/leancloud-storage@4.12.2/dist/av-live-query-min.js"></script>
-  <script src="/js/src/Valine.min.js"></script> 
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-  {% set valine_uri = '/js/src/Valine.min.js' %}  
-  {% if theme.vendors.valine %}
-    {% set valine_uri = theme.vendors.valine %}
-  {% endif %}
-  <script src="{{ valine_uri }}"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
@@ -22,15 +17,9 @@
         appKey: '{{ theme.valine.appkey }}',
         placeholder: '{{ theme.valine.placeholder }}',
         avatar:'{{ theme.valine.avatar }}',
-        guest_info:['nick'] , 
+        guest_info:['guest'] , 
         pageSize:'{{ theme.valine.pageSize }}' || 10,
     });
     
-    var infoEle = document.querySelector('#comments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
-      infoEle.childNodes.forEach(function(item) {
-        item.parentNode.removeChild(item);
-      });
-    }
   </script>
 {% endif %}
