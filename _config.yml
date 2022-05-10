@@ -382,21 +382,6 @@ changyan:
   appkey:
 
 
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-valine:
-  enable: true
-  appid: iu2W9YOrkxvoXWEGPBFKOP3G-gzGzoHsz # your leancloud application appid
-  appkey: 9WRYEmJ7PeAzvXhXU6BddHR7  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-
-
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
 #youyan_uid: your uid
@@ -537,13 +522,33 @@ rating:
   color:  fc6423
 # ---------------------------------------------------------------
 
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+valine:
+  enable: true
+  appid: zsD5a2JtAD95dPxa8BpK56XA-MdYXbMMI # your leancloud application appid
+  appkey: 7kgfognspTtLa2IuJih1EH8y  # your leancloud application appkey
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: iu2W9YOrkxvoXWEGPBFKOP3G-gzGzoHsz
-  app_key: 9WRYEmJ7PeAzvXhXU6BddHR7
+  app_id: zsD5a2JtAD95dPxa8BpK56XA-MdYXbMMI
+  app_key: 7kgfognspTtLa2IuJih1EH8y
+    # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  security: false
+  # 由于Leancloud免费版的云引擎存在请求线程数和运行时间限制以及休眠机制，
+  # 很多时候访客数量加载会很慢。
+  # 如果设置betterPerformance为true，
+  # 则网页则会在提交请求之前直接显示访客人数为查询到的人数+1，以增加用户体验。
+  betterPerformance: false
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
