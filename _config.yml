@@ -774,9 +774,9 @@ githubEmojis:
   localEmojis:
 
 
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /images/wechat-reward-image.png
-alipay: /images/alipay-reward-image.png
+# reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+# wechatpay: /images/wechat-reward-image.png
+# alipay: /images/alipay-reward-image.png
 
 # 文章末尾添加“本文结束”标记，请勿直接添加，教程链接：
 # http://shenzekun.cn/hexo的next主题个性化配置教程.html
