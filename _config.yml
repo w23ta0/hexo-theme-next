@@ -361,7 +361,7 @@ han: false
 # swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: 56695de457322a087823cf3b7a004878
+baidu_analytics:
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -455,10 +455,10 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification: mfpXQWYjakmUHCSG3MJxk8SDfQ2oLcOgJ3a0YQ9kycw
+google_site_verification:
 
 # Google Analytics
-google_analytics: UA-40175682-4
+google_analytics:
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
