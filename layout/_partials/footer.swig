@@ -29,7 +29,7 @@
     #}{{ totalcount(site, '0,0.0a') }}{#
   #}</span>
   {% endif %}
-</div>
+
 
 {% if theme.footer.powered %}
   <div class="powered-by">{#
