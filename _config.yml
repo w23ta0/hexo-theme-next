@@ -44,7 +44,7 @@ footer:
   icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 
+  copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
@@ -150,7 +150,6 @@ links:
   Coldplay Official Website: https://coldplay.com/
   海底电缆地图：连通世界的方式: https://www.submarinecablemap.com/
   尼古拉·特斯拉：发明了现代世界的人: https://www.bilibili.com/video/av6211226/
-  我的小伙伴们: /friends/ || 友情链接
 
 
 
